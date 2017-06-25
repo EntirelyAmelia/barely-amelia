@@ -24,7 +24,7 @@ size = random.randint(5, 25)
 
 # Tweet it
 bot.twitter_login(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET)
-bot.twitter_tweeting_start(days=0, hours=0, minutes=1, keywords=None)
+bot.twitter_tweeting_start(days=0, hours=1, minutes=3, keywords=None)
 
 def wait():
     secsinweek = 7 * 24 * 60 * 60
