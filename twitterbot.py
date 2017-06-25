@@ -3,7 +3,6 @@ import random
 import time
 
 from markovbot.markovbot import MarkovBot
-
 TWITTER_CONSUMER_KEY = ''
 TWITTER_CONSUMER_SECRET = ''
 TWITTER_ACCESS_TOKEN = ''
@@ -20,17 +19,16 @@ source = os.path.join(dirname, 'source.txt')
 bot.read(source)
 
 # Determine the size of the tweet
-size = random.randint(5, 25)
+size = random.randint(8, 12)
 
-seedwords = [] #['computers', 'running', 'marathon', 'PHP', 'fuck', 'bagel', 'cat']
-
-# text = bot.generate_text(size, seedwords)
-# print("tweetbot says:")
-# print(text)
+# for x in range(0, 20):
+#     text = bot.generate_text(size)
+#     # print("tweetbot says:")
+#     print(text)
 
 # Tweet it
 bot.twitter_login(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET)
-bot.twitter_tweeting_start(days=0, hours=1, minutes=3, keywords=None)
+bot.twitter_tweeting_start(days=0, hours=0, minutes=30, jitter=3, keywords=None)
 
 def wait():
     secsinhour = 60 * 60
