@@ -1,5 +1,5 @@
 # barely-amelia
-A markov bot based on @entirelyamelia's tweets.
+A markov bot based on [@entirelyamelia](https://www.twitter.com/entirelyamelia)'s tweets. Uses [esdalmaijer/markovbot](https://github.com/esdalmaijer/markovbot) for generating markov chains.
 
 # Usage
 1. Set your Twitter API credentials in `twitterbot.py`.
