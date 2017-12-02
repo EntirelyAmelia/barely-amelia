@@ -20,9 +20,13 @@ source = os.path.join(dirname, 'source.txt')
 bot.read(source)
 
 # Determine the size of the tweet
-size = random.randint(5, 25)
+size = random.randint(7, 13)
 
-# Tweet it
+# text = bot.generate_text(size)
+# print("tweetbot says:")
+# print(text)
+
+# # Tweet it
 bot.twitter_login(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET)
 bot.twitter_tweeting_start(days=0, hours=1, minutes=3, keywords=None)
 
